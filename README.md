@@ -1,4 +1,4 @@
-# vuefolio
+# manintheglass
 
 > My portfolio built using Vue.
 
