@@ -1,11 +1,39 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
+  <div>
+    <component :is="store.slideNum" :store="store"></component>
   </div>
 </template>
 
+<style lang="scss">
+
+</style>
+
 <script>
+  import Vue from 'vue';
+  import SlideOne from './components/SlideOne';
+  import SlideTwo from './components/SlideTwo';
+
   export default {
-    name: 'app',
+    components: {
+      SlideOne,
+      SlideTwo,
+    },
+    /**
+     * Slides:
+     *  "Web Architect"
+     *  Adventure/Challenge
+     *  "Tools" i.e. skills
+     *  Contact page
+     */
+    data() {
+      return {
+        store: {
+          slideNum: 'SlideOne',
+          setSlideNum(slide) {
+            Vue.set(this, 'slideNum', slide);
+          },
+        },
+      };
+    },
   };
 </script>
