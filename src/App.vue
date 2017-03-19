@@ -1,6 +1,7 @@
 <template>
   <div>
-    <component :is="store.slideNum" :store="store"></component>
+    <navbar :store="store"></navbar>
+    <!--<component :is="store.slideNum" :store="store"></component>-->
   </div>
 </template>
 
@@ -10,11 +11,13 @@
 
 <script>
   import Vue from 'vue';
+  import Navbar from './components/Navbar';
   import SlideOne from './components/SlideOne';
   import SlideTwo from './components/SlideTwo';
 
   export default {
     components: {
+      Navbar,
       SlideOne,
       SlideTwo,
     },
