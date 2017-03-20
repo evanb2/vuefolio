@@ -6,11 +6,20 @@
           <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma logo">
         </a>
         <a class="nav-item is-tab is-hidden-mobile"
-           :class="[store.slideNum === 'SlideOne' ? 'is-active' : '']">
+           :class="[store.slideNum === 'SlideOne' ? 'is-active' : '']"
+           @click="store.setSlideNum('SlideOne')">
           About
         </a>
-        <a class="nav-item is-tab is-hidden-mobile">CV</a>
-        <a class="nav-item is-tab is-hidden-mobile">Adventures/Projects</a>
+        <a class="nav-item is-tab is-hidden-mobile"
+           :class="[store.slideNum === 'SlideTwo' ? 'is-active' : '']"
+           @click="store.setSlideNum('SlideTwo')">
+          CV
+        </a>
+        <a class="nav-item is-tab is-hidden-mobile"
+           :class="[store.slideNum === 'SlideThree' ? 'is-active' : '']"
+           @click="store.setSlideNum('SlideThree')">
+          Adventures/Projects
+        </a>
       </div>
       <span class="nav-toggle">
         <span></span>
