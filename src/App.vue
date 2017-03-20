@@ -1,12 +1,18 @@
 <template>
   <div>
     <navbar :store="store"></navbar>
-    <!--<component :is="store.slideNum" :store="store"></component>-->
+    <div class="app__background">
+      <!--<component :is="store.slideNum" :store="store"></component>-->
+    </div>
   </div>
 </template>
 
 <style lang="scss">
-
+  .app__background {
+    /*background-size: 100% 100%;*/
+    height: 770px;
+    background: url('./assets/img/center_ridge.jpg') no-repeat;
+  }
 </style>
 
 <script>

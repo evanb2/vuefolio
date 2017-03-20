@@ -26,11 +26,11 @@
         <span></span>
         <span></span>
       </span>
-      <div class="nav-right nav-menu">
-        <a class="nav-item is-tab is-hidden-tablet is-active">About</a>
-        <a class="nav-item is-tab is-hidden-tablet">CV</a>
-        <a class="nav-item is-tab is-hidden-tablet">Adventures/Projects</a>
-      </div>
+      <!--<div class="nav-right nav-menu">-->
+        <!--<a class="nav-item is-tab is-hidden-tablet is-active">About</a>-->
+        <!--<a class="nav-item is-tab is-hidden-tablet">CV</a>-->
+        <!--<a class="nav-item is-tab is-hidden-tablet">Adventures/Projects</a>-->
+      <!--</div>-->
     </div>
   </nav>
 </template>
